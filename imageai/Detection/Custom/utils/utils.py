@@ -282,7 +282,6 @@ def compute_overlap(a, b):
     overlaps: (N, K) ndarray of overlap between boxes and query_boxes
     """
     area = (b[:, 2] - b[:, 0]) * (b[:, 3] - b[:, 1])
-
     iw = np.minimum(np.expand_dims(a[:, 2], axis=1), b[:, 2]) - np.maximum(np.expand_dims(a[:, 0], 1), b[:, 0])
     ih = np.minimum(np.expand_dims(a[:, 3], axis=1), b[:, 3]) - np.maximum(np.expand_dims(a[:, 1], 1), b[:, 1])
 
