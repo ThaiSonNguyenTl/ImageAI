@@ -10,7 +10,6 @@ def IOU(ann, centroids):
 
     for centroid in centroids:
         c_w, c_h = centroid
-
         if c_w >= w and c_h >= h:
             similarity = w*h/(c_w*c_h)
         elif c_w >= w and c_h <= h:
