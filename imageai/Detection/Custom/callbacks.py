@@ -2,7 +2,6 @@ from keras.callbacks import TensorBoard, ModelCheckpoint
 import tensorflow as tf
 import numpy as np
 import warnings
-
 class CustomTensorBoard(TensorBoard):
     """ to log the loss after each batch
     """    
