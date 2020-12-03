@@ -6,7 +6,6 @@ keras_resnet.blocks._1d
 
 This module implements a number of popular one-dimensional residual blocks.
 """
-
 import keras.layers
 import keras.regularizers
 from imageai.Detection import keras_resnet
@@ -15,7 +14,6 @@ from imageai.Detection.keras_resnet import layers
 parameters = {
     "kernel_initializer": "he_normal"
 }
-
 
 def basic_1d(filters, stage=0, block=0, kernel_size=3, numerical_name=False, stride=None, freeze_bn=False):
     """
@@ -81,8 +79,6 @@ def basic_1d(filters, stage=0, block=0, kernel_size=3, numerical_name=False, str
         return y
 
     return f
-
-
 def bottleneck_1d(filters, stage=0, block=0, kernel_size=3, numerical_name=False, stride=None, freeze_bn=False):
     """
     A one-dimensional bottleneck block.
