@@ -5,6 +5,7 @@ from keras.utils import Sequence
 from imageai.Detection.Custom.utils.bbox import BoundBox, bbox_iou
 from imageai.Detection.Custom.utils.image import apply_random_scale_and_crop, random_distort_image, random_flip, correct_bounding_boxes
 class BatchGenerator(Sequence):
+
     def __init__(self, 
         instances, 
         anchors,   
@@ -18,7 +19,8 @@ class BatchGenerator(Sequence):
         jitter=True, 
         norm=None
     ):
-        self.instances          = instances
+    
+     self.instances          = instances
         self.batch_size         = batch_size
         self.labels             = labels
         self.downsample         = downsample
