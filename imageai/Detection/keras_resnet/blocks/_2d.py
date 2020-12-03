@@ -6,17 +6,13 @@ keras_resnet.blocks._2d
 
 This module implements a number of popular two-dimensional residual blocks.
 """
-
 import keras.layers
 import keras.regularizers
 from imageai.Detection import keras_resnet
 from imageai.Detection.keras_resnet import layers
-
 parameters = {
     "kernel_initializer": "he_normal"
 }
-
-
 def basic_2d(filters, stage=0, block=0, kernel_size=3, numerical_name=False, stride=None, freeze_bn=False):
     """
     A two-dimensional basic block.
