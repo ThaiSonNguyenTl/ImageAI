@@ -8,7 +8,6 @@ from imageai.Detection.Custom.generator import BatchGenerator
 from imageai.Detection.Custom.utils.utils import normalize, evaluate
 from keras.models import load_model
 
-
 def _main_(args):
     config_path = args.conf
 
