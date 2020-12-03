@@ -1,6 +1,7 @@
 import os
 import xml.etree.ElementTree as ET
 import pickle
+
 def parse_voc_annotation(ann_dir, img_dir, cache_name, labels=[]):
     if os.path.exists(cache_name):
         with open(cache_name, 'rb') as handle:
@@ -29,8 +30,7 @@ def parse_voc_annotation(ann_dir, img_dir, cache_name, labels=[]):
                     img['height'] = int(elem.text)
                 if 'object' in elem.tag or 'part' in elem.tag:
                     obj = {}
-                    
-
+                
                     for attr in list(elem):
                         if 'name' in attr.tag:
                             obj['name'] = attr.text
