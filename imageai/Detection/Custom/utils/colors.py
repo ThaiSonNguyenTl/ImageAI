@@ -1,4 +1,5 @@
 def get_color(label):
+
     """ Return a color from a set of predefined colors. Contains 80 colors in total.
     code originally from https://github.com/fizyr/keras-retinanet/
     Args
