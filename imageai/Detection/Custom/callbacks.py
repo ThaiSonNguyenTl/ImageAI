@@ -24,7 +24,6 @@ class CustomTensorBoard(TensorBoard):
             self.writer.flush()
         
         super(CustomTensorBoard, self).on_batch_end(batch, logs)
-
 class CustomModelCheckpoint(ModelCheckpoint):
     """ to save the template model, not the multi-GPU model
     """
