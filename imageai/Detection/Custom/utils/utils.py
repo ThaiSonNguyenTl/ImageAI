@@ -4,11 +4,8 @@ import os
 from .bbox import BoundBox, bbox_iou
 from scipy.special import expit
 
-
 def _sigmoid(x):
     return expit(x)
-
-
 def makedirs(path):
     try:
         os.makedirs(path)
