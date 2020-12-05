@@ -31,7 +31,8 @@ class Evaluate(keras.callbacks.Callback):
             tensorboard     : Instance of keras.callbacks.TensorBoard used to log the mAP value.
             verbose         : Set the verbosity level, by default this is set to 1.
         """
-        self.generator       = generator
+    
+       self.generator       = generator
         self.iou_threshold   = iou_threshold
         self.score_threshold = score_threshold
         self.max_detections  = max_detections
