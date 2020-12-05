@@ -13,7 +13,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 """
-
 import keras
 from .. import initializers
 from .. import layers
@@ -24,6 +23,7 @@ import numpy as np
 """
 A dictionary mapping custom layer names to the correct classes.
 """
+
 custom_objects = {
     'UpsampleLike'          : layers.UpsampleLike,
     'PriorProbability'      : initializers.PriorProbability,
