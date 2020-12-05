@@ -13,7 +13,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 """
-
 import keras.backend
 from .dynamic import meshgrid
 
@@ -22,10 +21,9 @@ import numpy as np
 
 def bbox_transform_inv(boxes, deltas, mean=None, std=None):
     if mean is None:
-        mean = [0, 0, 0, 0]
+        mean = [0 , 0, 0, 0]
     if std is None:
         std = [0.1, 0.1, 0.2, 0.2]
-
     widths  = boxes[:, :, 2] - boxes[:, :, 0]
     heights = boxes[:, :, 3] - boxes[:, :, 1]
     ctr_x   = boxes[:, :, 0] + 0.5 * widths
