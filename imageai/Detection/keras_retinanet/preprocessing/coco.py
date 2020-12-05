@@ -16,7 +16,6 @@ limitations under the License.
 
 from ..preprocessing.generator import Generator
 from ..utils.image import read_image_bgr
-
 import os
 import numpy as np
 
