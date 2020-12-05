@@ -1,6 +1,5 @@
 import keras
 
-
 class BatchNormalization(keras.layers.BatchNormalization):
     """
     Identical to keras.layers.BatchNormalization, but adds the option to freeze parameters.
