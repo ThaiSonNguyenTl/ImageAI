@@ -6,7 +6,6 @@ keras_resnet.models._time_distributed_2d
 
 This module implements popular time distributed two-dimensional residual networks.
 """
-
 import keras.backend
 import keras.layers
 import keras.models
@@ -15,7 +14,6 @@ import keras.regularizers
 from imageai.Detection import keras_resnet as keras_resnet
 from imageai.Detection.keras_resnet import blocks
 from imageai.Detection.keras_resnet import layers
-
 
 def TimeDistributedResNet(inputs, blocks, block, include_top=True, classes=1000, freeze_bn=True, *args, **kwargs):
     """
@@ -43,8 +41,7 @@ def TimeDistributedResNet(inputs, blocks, block, include_top=True, classes=1000,
         >>> shape, classes = (224, 224, 3), 1000
 
         >>> x = keras.layers.Input(shape)
-
-        >>> blocks = [2, 2, 2, 2]
+          >>> blocks = [2, 2, 2, 2]
 
         >>> blocks = keras_resnet.blocks.time_distributed_basic_2d
 
