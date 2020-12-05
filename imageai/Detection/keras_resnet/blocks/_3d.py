@@ -15,8 +15,6 @@ from imageai.Detection.keras_resnet import layers
 parameters = {
     "kernel_initializer": "he_normal"
 }
-
-
 def basic_3d(filters, stage=0, block=0, kernel_size=3, numerical_name=False, stride=None, freeze_bn=False):
     """
     A three-dimensional basic block.
