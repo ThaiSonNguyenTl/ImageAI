@@ -93,6 +93,7 @@ def ResNet(inputs, blocks, block, include_top=True, classes=1000, freeze_bn=True
         return keras.models.Model(inputs=inputs, outputs=outputs, *args, **kwargs)
 
 
+
 def ResNet18(inputs, blocks=None, include_top=True, classes=1000, *args, **kwargs):
     """
     Constructs a `keras.models.Model` according to the ResNet18 specifications.
