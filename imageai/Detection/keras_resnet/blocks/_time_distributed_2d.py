@@ -16,7 +16,6 @@ parameters = {
     "kernel_initializer": "he_normal"
 }
 
-
 def time_distributed_basic_2d(filters, stage=0, block=0, kernel_size=3, numerical_name=False, stride=None, freeze_bn=False):
     """
 
