@@ -89,6 +89,7 @@ class ResNet50(keras.models.Model):
 
         >>> model.compile("adam", "categorical_crossentropy", ["accuracy"])
     """
+    
     def __init__(self, inputs, classes):
         outputs = keras_resnet.models.ResNet50(inputs)
 
