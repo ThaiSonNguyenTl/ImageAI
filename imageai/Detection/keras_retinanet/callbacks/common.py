@@ -1,6 +1,5 @@
 import keras.callbacks
 
-
 class RedirectModel(keras.callbacks.Callback):
     """Callback which wraps another callback, but executed on a different model.
     # Arguments
@@ -22,8 +21,7 @@ class RedirectModel(keras.callbacks.Callback):
 
         self.callback = callback
         self.redirect_model = model
-
-    def on_epoch_begin(self, epoch, logs=None):
+ def on_epoch_begin(self, epoch, logs=None):
         self.callback.on_epoch_begin(epoch, logs=logs)
 
     def on_epoch_end(self, epoch, logs=None):
