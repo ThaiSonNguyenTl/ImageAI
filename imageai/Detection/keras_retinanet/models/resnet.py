@@ -28,8 +28,6 @@ custom_objects = retinanet.custom_objects.copy()
 custom_objects.update(keras_resnet.custom_objects)
 
 allowed_backbones = ['resnet50', 'resnet101', 'resnet152']
-
-
 def download_imagenet(backbone):
     validate_backbone(backbone)
 
