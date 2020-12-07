@@ -6,8 +6,8 @@ setup(name="imageai",
       url="https://github.com/OlafenwaMoses/ImageAI",
       author='Moses Olafenwa and John Olafenwa',
       author_email='guymodscientist@gmail.com',
-      license='MIT',
+      license='MIT' ,
       packages= find_packages(),
       install_requires=['numpy','scipy','pillow',"matplotlib", "h5py"],
-      zip_safe=False
+      zip_safe= False
       )
