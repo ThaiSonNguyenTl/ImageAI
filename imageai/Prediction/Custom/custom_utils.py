@@ -1,9 +1,6 @@
 import json
 
 CLASS_INDEX = None
-
-
-
 def preprocess_input(x):
     """Preprocesses a tensor encoding a batch of images.
 
@@ -20,7 +17,6 @@ def preprocess_input(x):
     x *= (1./255)
 
     return x
-
 
 def decode_predictions(preds, top=5, model_json=""):
 
