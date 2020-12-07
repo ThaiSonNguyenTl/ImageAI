@@ -58,7 +58,7 @@ def resnet_first_block_first_module(input, channel_depth):
 def resnet_block(input, channel_depth, num_layers, strided_pool_first = False ):
     for i in range(num_layers):
         pool = False
-        if(i == 0 and strided_pool_first):
+        if(i == 0 and strided_pool_first) :
             pool = True
         input = resnet_module(input, channel_depth, strided_pool=pool)
 
