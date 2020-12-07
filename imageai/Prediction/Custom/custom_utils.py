@@ -15,11 +15,9 @@ def preprocess_input(x):
 
     # 'RGB'->'BGR'
     x *= (1./255)
-
     return x
 
 def decode_predictions(preds, top=5, model_json=""):
-
 
     global CLASS_INDEX
 
