@@ -6,7 +6,7 @@ from tensorflow.python.keras.models import Model
 
 def resnet_module(input, channel_depth, strided_pool=False ):
     residual_input = input
-    stride = 1
+    stride =  1
 
     if(strided_pool):
         stride = 2
