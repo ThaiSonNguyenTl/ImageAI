@@ -45,13 +45,11 @@ class SubPixelUpscaling(Layer):
 
     def __init__(self, scale_factor=2, data_format=None, **kwargs):
         super(SubPixelUpscaling, self).__init__(**kwargs)
-
         self.scale_factor = scale_factor
         self.data_format = "channels_last"
 
     def build(self, input_shape):
         pass
-
     def call(self, x, mask=None):
         y = depth_to_space(x, self.scale_factor, self.data_format)
         return y
