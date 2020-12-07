@@ -40,6 +40,7 @@ def preprocess_input(x, data_format=None):
         x[..., 0] -= 103.939
         x[..., 1] -= 116.779
         x[..., 2] -= 123.68
+    
     return x
 
 
