@@ -7,7 +7,7 @@ setup(
       url="https://github.com/ThaiSonNguyenTl/imageAI",
       author='Son Mo Tien Tuan',
       author_email='thaisonnguyentl@gmail.com',
-      license='MIT' ,
+      license = 'MIT' ,
       packages= find_packages(),
       install_requires=['numpy','scipy','pillow',"matplotlib", "h5py"],
       zip_safe= False
