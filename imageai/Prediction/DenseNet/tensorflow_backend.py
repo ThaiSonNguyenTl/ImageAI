@@ -8,4 +8,4 @@ def depth_to_space(input, scale, data_format=None):
 
     data_format = data_format.lower()
     out = tf.depth_to_space(input, scale, data_format=data_format)
-    return out
+    return out 
