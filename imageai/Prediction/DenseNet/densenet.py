@@ -24,7 +24,6 @@ from ..DenseNet.imagenet_utils import decode_predictions
 from tensorflow.python.keras import backend as K
 
 from ..DenseNet.subpixel import SubPixelUpscaling
-
 def preprocess_input(x, data_format=None):
     """Preprocesses a tensor encoding a batch of images.
 
