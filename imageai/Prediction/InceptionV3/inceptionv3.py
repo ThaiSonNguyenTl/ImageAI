@@ -30,8 +30,6 @@ from tensorflow.python.keras.layers import MaxPooling2D
 from tensorflow.python.keras.models import Model
 
 from ..InceptionV3.imagenet_utils import _obtain_input_shape, decode_predictions
-
-
 def conv2d_bn(x,
               filters,
               num_row,
