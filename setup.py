@@ -10,5 +10,4 @@ setup(name="imageai",
       packages= find_packages(),
       install_requires=['numpy','scipy','pillow',"matplotlib", "h5py"],
       zip_safe=False
-
       )
